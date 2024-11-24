@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Personalizados</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>¡Bienvenido a Servicios Digitales!</h1>
+    <p>Elige entre nuestras opciones y lleva tus ideas al siguiente nivel.</p>
+  </header>
+  <main class="main-container">
+    <section class="option" id="web">
+      <h2 class="option-title">🎨 Diseño Web</h2>
+      <p class="option-description">Crea una página profesional y atractiva.</p>
+      <p class="option-price">Precio: <strong>10 euros</strong></p>
+      <button class="buy-btn" data-item="Web" data-price="10">Comprar</button>
+    </section>
+
+    <section class="option" id="bot">
+      <h2 class="option-title">🤖 Bot Personalizado</h2>
+      <p class="option-description">Automatiza tareas o crea un asistente virtual.</p>
+      <p class="option-price">Precio: <strong>1 euro por persona</strong></p>
+      <label for="numPersonas">Personas:</label>
+      <input type="number" id="numPersonas" min="1" value="1" class="people-input">
+      <button class="buy-btn" data-item="Bot">Calcular y Comprar</button>
+    </section>
+
+    <section class="option" id="juego">
+      <h2 class="option-title">🎮 Desarrollo de Juegos</h2>
+      <p class="option-description">Crea un juego a medida con tus ideas.</p>
+      <p class="option-price">Desde: <strong>20 euros</strong></p>
+      <label for="gamePrice">Monto:</label>
+      <input type="number" id="gamePrice" min="20" value="20" class="price-input">
+      <button class="buy-btn" data-item="Juego">Comprar</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Para cualquier consulta, contáctanos en:</p>
+    <ul>
+      <li>Email: <a href="mailto:legajo.manuall@gmail.com">legajo.manuall@gmail.com</a></li>
+      <li>Bizum: 613080436</li>
+    </ul>
+  </footer>
+  <div id="message" class="message hidden"></div>
+  <script src="script.js"></script>
+</body>
+</html>
